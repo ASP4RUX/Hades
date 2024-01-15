@@ -1,4 +1,4 @@
-package Hades
+package hades
 
 import "golang.org/x/sys/windows"
 
