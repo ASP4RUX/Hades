@@ -1,4 +1,4 @@
-module Hades
+module github.com/ASP4RUX/Hades
 
 go 1.21.4
 
