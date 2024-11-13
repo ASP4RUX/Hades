@@ -30,4 +30,4 @@ func main() {
 		panic(err)
 	}
 	println(NtAllocateVirtualMemory.Id)
-}```
+}
