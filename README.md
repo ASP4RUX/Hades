@@ -8,7 +8,7 @@ Custom Syscalld Hints, GetModuleHandle and GetProcessAddres for evasion.
 import (
   "crypto/sha1"
   "encoding/hex"
-   ghostevasion "github.com/BlackShell256/GhostEvasion/pkg/GhostEvasion"
+   hades "github.com/ASP4RUX/Hades/pkg/Hades"
 )
 
 func hash(f string) string {
@@ -23,7 +23,7 @@ func hash(f string) string {
 }
 
 func main() {
-	newWhisper := ghostevasion.Whisper(hash)
+	newWhisper := hades.Whisper(hash)
 
 	NtAllocateVirtualMemory, err := newWhisper.GetSysid("1021ddc2cb8b096b")
 	if err != nil {
